@@ -14,6 +14,9 @@
 		A94FCFD11F54C74B008A296A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94FCFCF1F54C74B008A296A /* LaunchScreen.storyboard */; };
 		A94FCFDC1F54C74B008A296A /* ARappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FCFDB1F54C74B008A296A /* ARappTests.swift */; };
 		A94FCFE71F54C74B008A296A /* ARappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FCFE61F54C74B008A296A /* ARappUITests.swift */; };
+		A9AD23401F61DE5A003AFC43 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD233F1F61DE5A003AFC43 /* MapViewController.swift */; };
+		A9BDCD7E1F5C9679004C7B22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BDCD7D1F5C9679004C7B22 /* MapKit.framework */; };
+		A9DED5961F61EB220089D7EE /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DED5951F61EB220089D7EE /* SensorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A94FCFE21F54C74B008A296A /* ARappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94FCFE61F54C74B008A296A /* ARappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARappUITests.swift; sourceTree = "<group>"; };
 		A94FCFE81F54C74B008A296A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9AD233F1F61DE5A003AFC43 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A9BDCD7D1F5C9679004C7B22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A9DED5951F61EB220089D7EE /* SensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BDCD7E1F5C9679004C7B22 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				A94FCFDA1F54C74B008A296A /* ARappTests */,
 				A94FCFE51F54C74B008A296A /* ARappUITests */,
 				A94FCFC41F54C74B008A296A /* Products */,
+				A9BDCD7C1F5C9679004C7B22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +107,8 @@
 			children = (
 				A94FCFC61F54C74B008A296A /* AppDelegate.swift */,
 				A94FCFC81F54C74B008A296A /* ViewController.swift */,
+				A9AD233F1F61DE5A003AFC43 /* MapViewController.swift */,
+				A9DED5951F61EB220089D7EE /* SensorViewController.swift */,
 				A94FCFCA1F54C74B008A296A /* Main.storyboard */,
 				A94FCFCD1F54C74B008A296A /* Assets.xcassets */,
 				A94FCFCF1F54C74B008A296A /* LaunchScreen.storyboard */,
@@ -123,6 +133,14 @@
 				A94FCFE81F54C74B008A296A /* Info.plist */,
 			);
 			path = ARappUITests;
+			sourceTree = "<group>";
+		};
+		A9BDCD7C1F5C9679004C7B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDCD7D1F5C9679004C7B22 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +213,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6Y2ATJXSLY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A94FCFD61F54C74B008A296A = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -263,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94FCFC91F54C74B008A296A /* ViewController.swift in Sources */,
+				A9AD23401F61DE5A003AFC43 /* MapViewController.swift in Sources */,
+				A9DED5961F61EB220089D7EE /* SensorViewController.swift in Sources */,
 				A94FCFC71F54C74B008A296A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +541,7 @@
 				A94FCFED1F54C74B008A296A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94FCFEE1F54C74B008A296A /* Build configuration list for PBXNativeTarget "ARappTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +550,7 @@
 				A94FCFF01F54C74B008A296A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94FCFF11F54C74B008A296A /* Build configuration list for PBXNativeTarget "ARappUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +559,7 @@
 				A94FCFF31F54C74B008A296A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
